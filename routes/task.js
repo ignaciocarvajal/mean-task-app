@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const mongojs = require('mongojs');
-const db = mongojs('mongodb://heroku_55kc33jl:paranoico.1@ds241039.mlab.com:41039/heroku_55kc33jl', ['tasks']);
+const db = mongojs('mongodb://ignacioc:volcom..@ds241039.mlab.com:41039/heroku_55kc33jl', ['tasks']);
 
 router.get('/tasks',(req, res, next) =>{
     db.tasks.find((err, tasks)=>{
