@@ -10,7 +10,8 @@ const taskRoute = require('./routes/task');
 
 //setting
 // app.set('views', path.join(__dirname,'./views'));
-app.set('port', process.env.PORT || 3000);
+const port = process.env.PORT || 3000;
+app.set('port', port);
 // app.engine('html', require('ejs').renderFile);
 // app.set('View engine', 'ejs');
 
