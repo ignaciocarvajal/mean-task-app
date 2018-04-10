@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node index.js",
     "dev": "nodemon src/index.js",
-    "postinstall" : "cd src/client && npm install && cd ../.. && npm start"
+    "postinstall" : "cd client && npm install && cd .. && npm start"
   },
   "keywords": [],
   "author": "",
