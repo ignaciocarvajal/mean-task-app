@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class TaskService {
 
-  private domain = 'http://app-task-mean.herokuapp.com/';
+  private domain = 'https://app-task-mean.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
 
