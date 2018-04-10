@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon src/index.js",
-    "postinstall" : "cd client && npm install && cd .. && npm start"
+    "postinstall" : "cd client && npm install"
   },
   "keywords": [],
   "author": "",
