@@ -10,7 +10,7 @@ const taskRoute = require('./routes/task');
 
 //setting
 // app.set('views', path.join(__dirname,'./views'));
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.set('port', port);
 // app.engine('html', require('ejs').renderFile);
 // app.set('View engine', 'ejs');
@@ -29,9 +29,9 @@ app.use('/api', [taskRoute]);
 //static files
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/dist/index.html'));
-  });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname + '/dist/index.html'));
+//   });
 
 
 //start server
