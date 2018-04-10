@@ -29,6 +29,6 @@ app.use('/api', [taskRoute]);
 app.use(express.static(path.join(__dirname, 'dist')));
 
 //start server
-app.listen(3000, ()=>{
-    console.log('server on port 3000');
+app.listen(port, ()=>{
+    console.log(`server on port${port}`);
 });
